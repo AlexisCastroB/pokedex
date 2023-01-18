@@ -14,6 +14,11 @@ const PokemonSpecies = ({id, change}) => {
     return english[english.length - 1].flavor_text
   }
   
+  const getTitle = (genera) => {
+    const english = genera.filter(gen => gen.language.name === 'en')
+    return english[0].genus
+  }
+  
   const content = () => {
     if(isLoading || isFetching)
       return(
@@ -31,6 +36,7 @@ const PokemonSpecies = ({id, change}) => {
           <Row className='pokemon-species'>
             <Col className='mt-3'>
               <h5>
+                <strong>{getTitle(data.genera)}</strong><br/>
                 {getDescription(data.flavor_text_entries)}
               </h5>
             </Col>
