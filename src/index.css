@@ -14,6 +14,23 @@ body {
   cursor: pointer;
 }
 
+/* Styling scrollbar for Chrome */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #d2d2d2; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666666; 
+}
+
 .bug{background-color: #c3d21f !important;}
 .dark{background-color: #8b6653 !important;}
 .dragon{background-color: #8a75fe !important;}

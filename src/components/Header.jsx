@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router';
 import logo from '../assets/pokedex_logo.png'
 import { Image, Row, Col } from 'react-bootstrap';
-import Searchbar from '../components/Searchbar';
+import Searchbar from './Searchbar';
 
 const Header = ({param, }) => {
   const navigate = useNavigate()
